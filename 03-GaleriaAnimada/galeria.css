@@ -1,0 +1,94 @@
+body {
+  background-color: #111;
+  overflow: hidden;
+  color: #fff;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+h1 {
+  position: absolute;
+  width: 260px;
+  text-align: center;
+  top: 0;
+}
+
+.container-cartas {
+  position: relative;
+  margin: 10px;
+  top: 100px;
+  height: 200px;
+}
+
+h2 {
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+  position: absolute;
+  bottom: -130px;
+  left: -70px;
+  rotate: 270deg;
+  text-shadow: 2px 2px 2px #000;
+  letter-spacing: 2px;
+  border-radius: 30px;
+}
+
+h3 {
+  position: absolute;
+  top: 350px;
+  right: 20px;
+  opacity: 0;
+}
+
+.image {
+  border-radius: 30px;
+  width: 210px;
+  height: 400px;
+  object-fit: cover;
+  transition: width 1s;
+  border: 3px solid #444;
+}
+
+.image:hover {
+  width: 400px;
+}
+
+#container-1:hover .h3-1 {
+  opacity: 1;
+  transition: opacity 4s;
+}
+
+#container-1:hover > #container-2 {
+  width: 100px;
+}
+
+#container-1:hover .h2-1 {
+  background: #000;
+  transition: background 4s;
+}
+
+#container-2:hover .h3-2 {
+  opacity: 1;
+  transition: opacity 4s;
+}
+
+#container-2:hover .h2-2 {
+  background: #000;
+  transition: background 4s;
+}
+
+#container-3:hover .h3-3 {
+  opacity: 1;
+  transition: opacity 4s;
+}
+
+#container-3:hover .h2-3 {
+  background: #000;
+  transition: background 4s;
+}
