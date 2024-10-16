@@ -1,0 +1,136 @@
+@keyframes anim {
+  0% {
+    background: linear-gradient(90deg, rgb(209, 19, 19), rgb(170, 17, 17));
+  }
+  50% {
+    background: linear-gradient(90deg, rgb(10, 117, 189), rgb(35, 13, 163));
+  }
+  100% {
+    background: linear-gradient(90deg, rgb(35, 170, 8), rgb(5, 122, 40));
+  }
+}
+
+body {
+  animation-name: anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  user-select: none;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  background-color: #333;
+  position: absolute;
+  top: 20vh;
+  width: 500px;
+  height: 410px;
+  border: 2px solid #aaa;
+  border-radius: 40px;
+  box-shadow: 1px 1px 2px 2px #fff;
+}
+
+form:hover h1 {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.input {
+  display: inline-block;
+  width: 420px;
+  padding: 18px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  font-size: 25px;
+  transition: all 3s fordwars;
+  color: #000;
+}
+
+.input:focus {
+  font-size: 25px;
+  background-color: #777;
+  border: 2px solid#000;
+  transition: all 1s;
+}
+
+#input-1:focus ~ .span-1 {
+  top: 108px;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#input-1:not(:focus):valid ~ .span-1 {
+  top: 110px;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#input-2:not(:focus):valid ~ .span-2 {
+  top: 210px;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#input-2:focus ~ .span-2 {
+  top: 207px;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+
+span {
+  position: absolute;
+  left: 50px;
+  color: #000;
+  font-size: 17px;
+  pointer-events: none;
+  transition: 2s ease all;
+  text-decoration: underline;
+}
+
+.span-1 {
+  top: 160px;
+}
+
+.span-2 {
+  top: 260px;
+}
+
+.input-1 {
+  padding: 10px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  border: 2px solid #888;
+}
+
+.input-1:hover {
+  background-color: #777;
+  border: 3px solid #fff;
+  transition: all 1s;
+}
+
+#input-3 {
+  margin-right: 60px;
+}
+
+#input-4 {
+  position: relative;
+  right: 10px;
+}
