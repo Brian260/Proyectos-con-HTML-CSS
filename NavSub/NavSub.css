@@ -1,0 +1,54 @@
+body {
+  background-color: #444;
+  padding: 0;
+  box-sizing: border-box;
+  background: conic-gradient(
+    rgb(100, 100, 100),
+    rgb(255, 255, 255),
+    rgb(100, 100, 100),
+    rgb(255, 255, 255)
+  );
+  background-repeat: no-repeat;
+  height: 96dvh;
+  overflow: hidden;
+}
+
+nav {
+  border-radius: 60px;
+  background: linear-gradient(90deg, rgb(235, 13, 13, 0.8), rgb(235, 115, 3));
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #222;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 0 20px;
+}
+
+a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.linea {
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  width: 0;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #000;
+  transition: 0.4s;
+}
+
+li:hover .linea {
+  width: 100%;
+}
